@@ -1,0 +1,23 @@
+{
+  "name": "handlebars-transport",
+  "version": "1.0.0",
+  "description": "Transport Hub application using handlebars",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "template-engine",
+    "handlebars"
+  ],
+  "author": "Akhil",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "ejs": "latest"
+  }
+}

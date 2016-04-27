@@ -1,0 +1,31 @@
+<html>
+<head>
+  <% include partials/includeHead.ejs %>
+</head>
+<body>
+  <% include partials/includeMenu.ejs %>
+  <BR><BR><BR>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4 panel panel-default">
+        <h1 align="center" class="margin-base-vertical">Welcome to the Transport Hub</h1>
+        <p class="help-block text-center">
+            <medium>Hi <%= welcomeMessage %>! Depending on your interest, I'll take you to a city</medium>
+        </p>
+        <form class="margin-base-vertical" method="post" action="/toCity">
+          <p class="input-group ">
+            <span class="input-group-addon"><span class="icon-user"></span></span>
+            <input type="text" required class="form-control input-lg" name="interest" placeholder="What is your interest?" />
+          </p>
+          <p class="text-center">
+            <button type="submit" class="btn btn-success btn-lg">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+    <% include partials/includeFoot.ejs %>
+  </body>
+</html> 
+
+

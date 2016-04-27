@@ -1,0 +1,29 @@
+<html>
+ <head>
+     <%include partials/includeHead.ejs %>
+ </head>
+ <body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4 panel panel-default">
+        <h1 align="center" class="margin-base-vertical">Sign In</h1>
+        <form class="margin-base-vertical" method="get" action="/toLanding">
+          <p class="input-group ">
+            <span class="input-group-addon"><span class="icon-user"></span></span>
+            <input type="text" required class="form-control input-lg" name="nm" placeholder="username" />
+          </p>
+          <p class="help-block text-center">
+            <small>Please login to use the Transport Hub</small>
+          </p>
+          <p class="text-center">
+            <button type="submit" class="btn btn-success btn-lg">Sign-In</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+    <% include partials/includeFoot.ejs %>
+  </body>
+  </html>
+
+  
